@@ -1,0 +1,10 @@
+package UnitTest;
+
+import org.junit.platform.suite.api.SelectClasses;
+import org.junit.platform.suite.api.Suite;
+
+@Suite
+@SelectClasses({ LogInScreenControllerTest.class, MysqlControllerTest.class, ReportsMainScreenControllerTest.class })
+public class AllTests {
+
+}

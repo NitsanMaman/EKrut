@@ -1,0 +1,9 @@
+package UnitTest;
+
+
+
+@Suite
+@SelectClasses({ LogInScreenControllerTest.class, MysqlControllerTest.class, ReportsMainScreenControllerTest.class })
+public class AllTests {
+
+}

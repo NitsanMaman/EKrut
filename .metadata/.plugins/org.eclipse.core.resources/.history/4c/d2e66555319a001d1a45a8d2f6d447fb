@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="productsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="940.0" prefWidth="950.0" stylesheets="@../Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.OrderScreens.ProductCatalogScreenController">
+   <children>
+      <Pane layoutX="552.0" layoutY="841.0" prefHeight="79.0" prefWidth="378.0">
+         <children>
+            <Button fx:id="checkOutButton" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="209.0" layoutY="12.0" mnemonicParsing="false" onMouseClicked="#checkOut" prefHeight="49.0" prefWidth="151.0" text="Checkout">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@agalacheckout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="emptyMyCartButton" alignment="TOP_LEFT" contentDisplay="RIGHT" layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onMouseClicked="#emptyMyCart" prefHeight="47.0" prefWidth="145.0" text="Empty cart">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@agalaclear.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="exitButton" layoutX="910.0" layoutY="10.0" maxHeight="30.0" minHeight="30.0" minWidth="30.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="30.0" prefWidth="30.0" styleClass="ExitButton">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="13.0" layoutY="885.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="44.0" prefWidth="87.0" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ListView fx:id="myCart" layoutX="48.0" layoutY="656.0" prefHeight="185.0" prefWidth="883.0" />
+      <ImageView fitHeight="71.0" fitWidth="72.0" layoutX="300.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@catalogIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="114.0" layoutY="891.0" prefHeight="30.0" prefWidth="138.0" text="Total amount :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Text fx:id="totalAmount" layoutX="258.0" layoutY="916.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$$$$$$" wrappingWidth="300.4700927734375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="279.0" layoutY="22.0" prefHeight="33.0" prefWidth="393.0" text="Create Order" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <TabPane fx:id="tabPane" layoutX="12.0" layoutY="80.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="577.0" prefWidth="919.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="80.0">
+        <tabs>
+          <Tab fx:id="snackTab" closable="false">
+               <content>
+                  <ScrollPane fx:id="snacksScroll" prefHeight="200.0" prefWidth="904.0">
+                     <content>
+                        <TilePane fx:id="snacksPane" prefHeight="544.0" prefWidth="868.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+          <Tab fx:id="drinkTab">
+               <content>
+                  <ScrollPane fx:id="drinksScroll" prefHeight="200.0" prefWidth="1204.0">
+                     <content>
+                        <TilePane fx:id="drinksPane" prefHeight="480.0" prefWidth="906.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Pane fx:id="backmycart" layoutX="48.0" layoutY="618.0" prefHeight="38.0" prefWidth="167.0">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="109.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@agala.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#ff1f1f" layoutX="140.0" layoutY="13.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label alignment="CENTER" layoutX="17.0" layoutY="4.0" prefHeight="35.0" prefWidth="94.0" text="My Cart" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="bar1" layoutX="655.0" layoutY="52.0" prefHeight="3.0" prefWidth="20.0" styleClass="plank" />
+      <Pane fx:id="bar2" layoutX="711.0" layoutY="52.0" prefHeight="3.0" prefWidth="21.0" style="-fx-background-color: #FFE4E1A8;" styleClass="plank" />
+      <Pane fx:id="bar3" layoutX="767.0" layoutY="52.0" prefHeight="3.0" prefWidth="21.0" style="-fx-background-color: #FFE4E1A8;" styleClass="plank" />
+      <Pane fx:id="bar4" layoutX="822.0" layoutY="52.0" prefHeight="3.0" prefWidth="21.0" style="-fx-background-color: #FFE4E1A8;" styleClass="plank" />
+      <Text fx:id="cartCounter" fill="WHITE" layoutX="-45.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="29.999992847442627" />
+      <Pane fx:id="circle1" layoutX="621.0" layoutY="34.0" prefHeight="71.0" prefWidth="71.0" style="-fx-background-color: #7FFFD496;" styleClass="circles">
+         <children>
+            <Text layoutX="11.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="circleTXT" text="0%" />
+         </children>
+      </Pane>
+      <Pane fx:id="circle2" layoutX="675.0" layoutY="34.0" prefHeight="71.0" prefWidth="71.0" style="-fx-background-color: #7FFFD496;" styleClass="circles">
+         <children>
+            <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="circleTXT" text="25%" />
+         </children>
+      </Pane>
+      <Pane fx:id="circle3" layoutX="732.0" layoutY="34.0" prefHeight="71.0" prefWidth="71.0" styleClass="circles">
+         <children>
+            <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="circleTXT" text="50%" />
+         </children>
+      </Pane>
+      <Pane fx:id="circle4" layoutX="787.0" layoutY="34.0" prefHeight="71.0" prefWidth="71.0" styleClass="circles">
+         <children>
+            <Text layoutX="7.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="circleTXT" text="75%" />
+         </children>
+      </Pane>
+      <Pane fx:id="circle5" layoutX="841.0" layoutY="34.0" prefHeight="71.0" prefWidth="71.0" styleClass="circles">
+         <children>
+            <Text layoutX="4.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="circleTXT" text="100%" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

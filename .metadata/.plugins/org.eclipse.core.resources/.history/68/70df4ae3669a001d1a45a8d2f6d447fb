@@ -1,0 +1,182 @@
+package UnitTest;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+
+import java.util.ArrayList;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import gui.ReportScreens.ReportsMainScreenController;
+import javafx.scene.input.MouseEvent;
+
+public class ReportsMainScreenControllerTest {
+	   private ReportsMainScreenController mockReportsMainScreenController;
+	   private MouseEvent event;
+	@Before
+	public void setUp() throws Exception {
+		mockReportsMainScreenController = spy(new ReportsMainScreenController());
+	}
+
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportNULLMonth() {
+		doReturn(null).when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		String expected = "You didn't choose Month!";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+	  
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportNULLYear() {
+		doReturn("10").when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		doReturn(null).when(mockReportsMainScreenController).getYearComboBox();
+		String expected = "You didn't choose Year!";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+	  
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportNULLType() {
+		doReturn("10").when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		doReturn("2022").when(mockReportsMainScreenController).getYearComboBox();
+		doReturn(null).when(mockReportsMainScreenController).getType();
+		String expected = "You didn't choose Report Type!";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+	  
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportNULLLocationFlag1() {
+		doReturn("10").when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		doReturn("2022").when(mockReportsMainScreenController).getYearComboBox();
+		doReturn("Inventory").when(mockReportsMainScreenController).getType();
+		doReturn(null).when(mockReportsMainScreenController).getLocation();
+		doReturn(1).when(mockReportsMainScreenController).getLocationFlag();
+		String expected = "You didn't choose Location !";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+	  
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportNULLLocationFlag0() {
+		doReturn("10").when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		doReturn("2022").when(mockReportsMainScreenController).getYearComboBox();
+		doReturn("Inventory").when(mockReportsMainScreenController).getType();
+		doReturn(null).when(mockReportsMainScreenController).getLocation();
+		doReturn(0).when(mockReportsMainScreenController).getLocationFlag();
+		doReturn(null).when(mockReportsMainScreenController).getMachineID();
+		doReturn(1).when(mockReportsMainScreenController).getMachineIDFlag();
+		String expected = "You didn't choose Machine ID!";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+	  
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportNULLMachineID() {
+		doReturn("10").when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		doReturn("2022").when(mockReportsMainScreenController).getYearComboBox();
+		doReturn("Inventory").when(mockReportsMainScreenController).getType();
+		doReturn("north").when(mockReportsMainScreenController).getLocation();
+		doReturn(0).when(mockReportsMainScreenController).getLocationFlag();
+		doReturn(null).when(mockReportsMainScreenController).getMachineID();
+		doReturn(1).when(mockReportsMainScreenController).getMachineIDFlag();
+		String expected = "You didn't choose Machine ID!";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+	  
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportNULLMachineIDFlag0() {
+		doReturn("1").when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		doReturn("2022").when(mockReportsMainScreenController).getYearComboBox();
+		doReturn("Inventory").when(mockReportsMainScreenController).getType();
+		doReturn("north").when(mockReportsMainScreenController).getLocation();
+		doReturn(0).when(mockReportsMainScreenController).getLocationFlag();
+		doReturn(null).when(mockReportsMainScreenController).getMachineID();
+		doReturn(0).when(mockReportsMainScreenController).getMachineIDFlag();
+		doNothing().when(mockReportsMainScreenController).saveChatClientData();
+		ArrayList<String> monthYearMachine = new ArrayList<>();
+		monthYearMachine.add("1");
+		monthYearMachine.add("2022");
+		doReturn("Report not found").when(mockReportsMainScreenController).inventoryReportCase(monthYearMachine,null);
+		String expected = "Report not found";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+	  
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportNotFound() {
+		doReturn("1").when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		doReturn("2022").when(mockReportsMainScreenController).getYearComboBox();
+		doReturn("Inventory").when(mockReportsMainScreenController).getType();
+		doReturn("north").when(mockReportsMainScreenController).getLocation();
+		doReturn(0).when(mockReportsMainScreenController).getLocationFlag();
+		doReturn("NOR1").when(mockReportsMainScreenController).getMachineID();
+		doReturn(0).when(mockReportsMainScreenController).getMachineIDFlag();
+		doNothing().when(mockReportsMainScreenController).saveChatClientData();
+		ArrayList<String> monthYearMachine = new ArrayList<>();
+		monthYearMachine.add("1");
+		monthYearMachine.add("2022");
+		doReturn("Report not found").when(mockReportsMainScreenController).inventoryReportCase(monthYearMachine,null);
+		String expected = "Report not found";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+	  
+	  // Check Functionality: 
+	  // Input Data: 
+	  // Expected Result: 
+	  @Test
+	  public void TestclickShowReportDoneSuccessfull() {
+		doReturn("10").when(mockReportsMainScreenController).getMonth();
+		doNothing().when(mockReportsMainScreenController).alertHandler(anyString(), anyBoolean());
+		doReturn("2022").when(mockReportsMainScreenController).getYearComboBox();
+		doReturn("Inventory").when(mockReportsMainScreenController).getType();
+		doReturn("north").when(mockReportsMainScreenController).getLocation();
+		doReturn(0).when(mockReportsMainScreenController).getLocationFlag();
+		doReturn("NOR1").when(mockReportsMainScreenController).getMachineID();
+		doReturn(0).when(mockReportsMainScreenController).getMachineIDFlag();
+		doNothing().when(mockReportsMainScreenController).saveChatClientData();
+		ArrayList<String> monthYearMachine = new ArrayList<>();
+		monthYearMachine.add("10");
+		monthYearMachine.add("2022");
+		doReturn("Report was found").when(mockReportsMainScreenController).inventoryReportCase(monthYearMachine,null);
+		doNothing().when(mockReportsMainScreenController).switchToReport(event,null);
+		String expected = "done";
+		String result = mockReportsMainScreenController.clickShowReport(event);
+		assertEquals(expected, result);
+	   }
+}

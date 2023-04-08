@@ -1,0 +1,621 @@
+.root{
+	-fx-background-image: url("Untitled-9.png");
+	-fx-background-size: stretch;
+	-fx-color1: rgba(0, 247, 255, 0.2);
+	-fx-color2: rgba(255, 0, 183, 0.2);
+	-fx-color3: rgba(0, 255, 255, 0.7);
+	-fx-color4: rgba(255, 0, 111, 0.7);
+	-fx-color5: rgba(162, 162, 162, 0.9);
+	-fx-color6: rgba(178, 178, 178, 0.9);
+}
+
+
+.circles{
+	-fx-background-radius: 50;
+	-fx-background-color: rgba(255, 228, 225, 0.66);
+	-fx-effect: dropshadow( one-pass-box , rgba(0, 0, 0, 0.37), 3, 1.0 , 2 , 3 );
+
+	-fx-pref-width: 35;
+	-fx-pref-height: 35;
+}
+.plank{
+	-fx-background-color: rgba(127, 255, 212, 0.59);
+}
+
+/*#circle1{*/
+
+/*}*/
+/*#circle2{*/
+
+/*}*/
+/*#circle3{*/
+
+/*}*/
+/*#circle4{*/
+
+/*}*/
+/*#circle5{*/
+
+/*}*/
+
+/*#bar1{*/
+
+/*}*/
+/*#bar2{*/
+
+/*}*/
+/*#bar3{*/
+
+/*}*/
+/*#bar4{*/
+
+/*}*/
+
+
+.text-field{
+	-fx-text-box-border: transparent;
+}
+
+.logo{
+	-fx-opacity: 90%;
+}
+
+.hbox{
+	-fx-background-color: green;
+}
+
+
+.text-area .content{
+	-fx-background-radius: 13;
+}
+
+#backmycart{
+	-fx-background-color: linear-gradient(to bottom, rgba(243, 243, 243, 0.77), rgba(224, 224, 224, 0.77));
+	-fx-background-radius: 13 13 0 0;
+	-fx-border-color: black;
+	-fx-border-style: solid solid none solid;
+	-fx-border-radius: 13 13 0 0;
+}
+
+.tab-pane .tab-header-area .tab-header-background{
+	-fx-background-color: transparent;
+}
+
+#gradientPane{
+	-fx-background-color: linear-gradient(to top, rgba(255, 255, 255, 0.61), transparent);
+}
+
+/****************************tab pane style***************************************************/
+.tab-pane{
+	-fx-focus-color: transparent;
+	-fx-background-radius: 13;
+}
+
+#snacksScroll{
+	-fx-background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.33), transparent);
+	-fx-border-color: black;
+	-fx-border-style: solid none none none;
+	-fx-border-width: 2;
+	/*-fx-border-radius: 0 13 13 13;*/
+	/*-fx-background-radius:  0 13 13 13;*/
+	-fx-padding: 10 0 0 10;
+}
+
+#drinksScroll{
+	-fx-background-color: linear-gradient(to bottom, rgba(255, 255, 255, 0.33), transparent);
+	-fx-border-color: black;
+	-fx-border-style: solid none none none;
+	-fx-border-width: 2;
+	/*-fx-border-radius: 0 13 13 13;*/
+	/*-fx-background-radius:  0 13 13 13;*/
+	-fx-padding: 10 0 0 10;
+}
+
+.tab-background{
+	-fx-background-color: rgba(255, 255, 255, 0.45);
+}
+
+.tab-header-area{
+	-fx-spacing: 10;
+}
+
+#addNewProductTab, #warehouseProductsTab, #machineProductsTab{
+	-fx-text-alignment: center;
+	-fx-background-color:
+			#c3c4c4,
+			linear-gradient(#d6d6d6 50%, white 100%),
+			radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+	-fx-background-radius: 13 13 0 0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: contain;
+	-fx-background-position: center;
+	-fx-border-color: black;
+	-fx-border-style: solid solid none solid;
+	-fx-border-radius: 13 13 0 0;
+	-fx-pref-width: 250;
+	-fx-pref-height: 40;
+}
+
+
+#addNewProductTab:selected, #warehouseProductsTab:selected, #machineProductsTab:selected{
+	-fx-background-color:
+			#c3c4c4,
+			linear-gradient(#d6d6d6 50%, rgba(143, 143, 143, 0.8) 100%),
+			radial-gradient(center 50% -40%, radius 200%, rgba(143, 143, 143, 0.8) 20%, rgba(230,230,230,0) 50%);
+	-fx-border-width: 3px;
+}
+
+#snackTab{
+	-fx-background-image: url("Untitled-3.png");
+	    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+	-fx-background-radius: 13 13 0 0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: contain;
+	-fx-background-position: center;
+	-fx-border-color: black;
+	-fx-border-style: solid solid none solid;
+	-fx-border-radius: 13 13 0 0;
+	-fx-pref-width: 250;
+	-fx-pref-height: 40;
+}
+
+#snackTab:selected{
+			-fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, rgba(143, 143, 143, 0.8) 100%),
+            radial-gradient(center 50% -40%, radius 200%, rgba(143, 143, 143, 0.8) 20%, rgba(230,230,230,0) 50%);
+	-fx-border-width: 3px;
+}
+
+
+#drinkTab{
+	-fx-background-image: url("Untitled-4.png");
+	    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+	-fx-background-radius: 13 13 0 0;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: contain;
+	-fx-background-position: center;
+	-fx-border-color: black;
+	-fx-border-style: solid solid none solid;
+	-fx-border-radius: 13 13 0 0;
+	-fx-pref-width: 250;
+	-fx-pref-height: 40;
+}
+
+#drinkTab:selected{
+			-fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, rgba(143, 143, 143, 0.8) 100%),
+            radial-gradient(center 50% -40%, radius 200%, rgba(143, 143, 143, 0.8) 20%, rgba(230,230,230,0) 50%);
+	-fx-border-width: 3px;
+}
+/********************************************************************************************/
+
+.background-blank{
+	-fx-border-color: rgba(65,65,65,0.63); 
+	-fx-border-width: 2 2 2 2; 
+	-fx-border-style: solid; 
+	-fx-border-radius: 13; 
+	-fx-background-color: rgba(255,255,255,0.84); 
+	-fx-background-radius: 13;
+}
+
+
+
+
+/****************************scroll pane style************************************************/
+.scroll-pane {
+	-fx-background-color: transparent;
+	-fx-hbar-policy: never;
+	-fx-vbar-policy: never;
+}
+.scroll-pane > .viewport {
+	-fx-background-color: transparent;
+}
+/********************************************************************************************/
+
+
+/****************************button style****************************************************/
+.button{
+	/*-fx-background-color: rgba(91, 91, 91, 0.62);*/
+}
+
+.button {
+    -fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, white 100%),
+            radial-gradient(center 50% -40%, radius 200%, #e6e6e6 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 5;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+.ExitButton{
+	-fx-background-image: url("exit1.png");
+	-fx-background-color: transparent;
+}
+
+.notification{
+	-fx-background-image: url("notification.png");
+	-fx-background-color: transparent;
+	-fx-background-size: cover;
+}
+
+.button:hover{
+	-fx-cursor: hand;
+	-fx-scale-x: 0.96;
+	-fx-scale-y: 0.96;
+	-fx-scale-z: 0.96;
+	-fx-font-scale: 0.96;
+		-fx-background-color:
+            #c3c4c4,
+            linear-gradient(#d6d6d6 50%, rgba(143, 143, 143, 0.8) 100%),
+            radial-gradient(center 50% -40%, radius 200%, rgba(143, 143, 143, 0.8) 20%, rgba(230,230,230,0) 50%);
+}
+
+.button:pressed {
+     -fx-background-insets: 2;
+}
+
+#btnEK{
+	-fx-background-image: url("/gui/ConnectionScreens/EK.png");
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70;
+	-fx-background-radius: 30;
+	-fx-background-position: center;
+}
+
+#btnOL{
+	-fx-background-image: url("/gui/ConnectionScreens/OL.png");
+	-fx-background-color: transparent;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: 70;
+	-fx-background-radius: 30;
+	-fx-background-position: center;
+}
+
+#fastLoginButton{
+	-fx-background-image: url("/gui/UserScreens/fastConnectPhone.png");
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 90;
+	-fx-background-radius:23;
+	-fx-background-color: radial-gradient(center 50% 50%, radius 70%, rgba(255, 255, 255, 0.88), transparent);
+	/*-fx-background-color: rgba(171, 255, 172, 0);*/
+	-fx-border-color: rgba(16, 175, 0, 0.82);
+	-fx-border-radius: 23;
+	-fx-border-width: 2;
+}
+
+#fastLoginButton:hover{
+	-fx-background-color: radial-gradient(center 50% 50%, radius 60%, rgba(243, 243, 243, 0.77), transparent);
+}
+
+/********************************************************************************************/
+
+
+/****************************text field style************************************************/
+.text-field{
+	-fx-text-box-border: transparent;
+	-fx-background-color: #ffffff;
+	-fx-text-fill: black;
+	-fx-prompt-text-fill: #707070;
+}
+/********************************************************************************************/
+
+
+/****************************combo box style*************************************************/
+.choice-box {
+	-fx-focus-color: transparent;
+	-fx-text-box-border: transparent;
+	-fx-opacity: 90%;
+	-fx-background-color: #ececec;
+	-fx-text-fill: black;
+	-fx-prompt-text-fill: #707070;
+}
+
+.combo-box{
+	-fx-focus-color: transparent;
+	-fx-text-box-border: transparent;
+	-fx-opacity: 90%;
+	-fx-background-color: #ececec;
+	-fx-text-fill: black;
+	-fx-prompt-text-fill: #707070;
+}
+/********************************************************************************************/
+
+
+/****************************alert **********************************************************/
+.alert .content .label{
+	-fx-background-color: #efd1c0;
+}
+/********************************************************************************************/
+
+
+/************************list view **********************************************************/
+#myCart{
+	-fx-background-color: linear-gradient(to bottom, rgba(224, 224, 224, 0.77), rgba(255, 255, 255, 0.09));
+	-fx-pref-width: 880;
+	-fx-pref-height: 180;
+	-fx-border-color: black;
+	-fx-background-radius: 0 13 13 13;
+	-fx-border-radius: 0 13 13 13;
+	-fx-border-width: 1;
+	-fx-padding: 5;
+}
+
+#myOrder{
+	-fx-background-color: linear-gradient(to bottom, rgba(224, 224, 224, 0.77), rgba(255, 255, 255, 0.09));
+	-fx-pref-width: 880;
+	-fx-border-color: black;
+	-fx-background-radius: 0 13 13 13;
+	-fx-border-radius: 13 13 13 0;
+	-fx-border-width: 1;
+	-fx-padding: 5;
+}
+
+#myCart .list-cell:empty, #myOrder .list-cell:empty{
+	-fx-opacity: 0;
+}
+#myCart .list-cell:not(:empty){
+	-fx-opacity: 100;
+}
+
+#myCart .list-cell:odd, #myOrder .list-cell:odd{
+	-fx-background-color: rgba(255, 228, 237, 0.9);
+	-fx-alignment: center;
+	-fx-text-alignment: center;
+	-fx-text-fill: black;
+}
+
+#myCart .list-cell:even, #myOrder .list-cell:even{
+	-fx-background-color: rgba(236, 230, 225, 0.9);
+	-fx-alignment: center;
+	-fx-text-fill: black;
+}
+
+#myCart .list-cell:hover, #myOrder .list-cell:hover{
+	-fx-background-color: rgba(213, 255, 247, 0.75);
+	-fx-text-fill: white;
+}
+
+/********************************************************************************************/
+
+
+/************************ split pane ********************************************************/
+.user-info{
+	-fx-border-radius: 20;
+	-fx-background-radius: 20;
+	-fx-border-color: black;
+	-fx-border-width: 1;
+}
+
+.split-pane{
+	-fx-background-color: radial-gradient(center 50% 50%, radius 80%, rgba(126, 126, 126, 0.77), transparent);
+	-fx-border-radius: 20;
+	-fx-background-radius: 20;
+	-fx-border-color: black;
+	-fx-border-width: 1;
+}
+
+.split-pane:vertical > .split-pane-divider {
+	-fx-background-color: linear-gradient(to bottom, rgba(224, 224, 224, 0.77), transparent);
+}
+/********************************************************************************************/
+
+
+/****************************tableview style**************************************************/
+.table-view{
+	-fx-background-color: radial-gradient(center 50% 50%, radius 100%, rgba(255, 255, 255, 0.77), transparent);
+	-fx-border-color: rgba(65,65,65,0.63);
+	-fx-border-width: 2 2 2 2;
+	-fx-border-style: solid;
+	-fx-border-radius: 13;
+	-fx-background-radius: 13;
+	-fx-faint-focus-color: transparent;
+}
+
+.table-row-cell:selected{
+	-fx-text-background-color: #000000;
+}
+
+.table-cell:filled:focused {
+	-fx-border-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+	-fx-background-color: transparent;
+}
+
+.table-view .corner {
+	-fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+	-fx-background-color: linear-gradient(to left top, -fx-color6,  -fx-color5);
+	-fx-background-radius: 13px 13px 0px 0px;
+	/*-fx-background-insets: 0 11px 0 0;*/
+	-fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+	-fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+	-fx-border-color: rgba(87, 87, 87, 0.76);
+	-fx-padding: 2 0 2 10px;
+}
+
+/*.table-row-cell:hover {*/
+/*	-fx-background-color: rgba(85, 255, 243, 0.65);*/
+/*	-fx-text-background-color: #000000;*/
+/*}*/
+
+.table-row-cell:odd{
+	-fx-background-color: rgba(236, 230, 225, 0.9);
+	/*-fx-background-color:  rgba(165, 245, 205, 0.27);*/
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+.table-row-cell:even{
+	/*-fx-background-color: rgba(56, 77, 75, 0.27);*/
+	-fx-background-color: rgba(213, 255, 247, 0.9);
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-padding: 0.0em;
+}
+
+.table-row-cell:empty{
+	-fx-opacity: 0;
+}
+.table-row-cell:not(:empty){
+	-fx-opacity: 100;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+	-fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+	-fx-opacity: 0;
+	-fx-padding: 2;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb{
+	-fx-background-color:  linear-gradient(to left top, -fx-color6, -fx-color5);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+	/*-fx-background-color:  linear-gradient(to left top, -fx-color6,  -fx-color5);*/
+	-fx-background-color: transparent;
+}
+
+.table-row-cell:highlighted {
+	-fx-background-color: #f602bc;
+	-fx-background-radius: 15px;
+}
+/**************************************************************************************************/
+
+.tooltip {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #333333;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+
+
+.spinner {
+	-fx-background-color: radial-gradient(center 50% 50%, radius 80%, rgba(143, 143, 143, 0.36) 10%, transparent);
+	/*-fx-border-color: rgba(93, 93, 93, 0.45);*/
+	-fx-background-radius: 10px;
+	/*-fx-border-width: 1px;*/
+	-fx-border-radius: 10px;
+	-fx-padding: 3px;
+	-fx-pref-height: 45px;
+}
+
+.spinner .text-field {
+	-fx-background-color: transparent;
+}
+
+.spinner .increment-arrow-button{
+	-fx-shape: "M 0 0 L 10 0 L 5 -10 Z";
+	-fx-background-color: radial-gradient(center 50% 50%, radius 70%, rgba(102, 255, 0, 0.67) 10%, transparent);
+	-fx-background-insets: 0 0 2 0;
+	-fx-border-color: linear-gradient(to bottom, rgba(98, 98, 98, 0.77), transparent);
+	-fx-border-insets: 0 0 2 0;
+	-fx-border-width: 1;
+
+}
+
+
+.spinner .increment-arrow-button:hover{
+	-fx-scale-y: 1.15;
+	-fx-scale-x: 1.15;
+}
+
+
+.spinner .decrement-arrow-button {
+	-fx-shape: "M 0 0 L 5 5 L 10 0 Z";
+	-fx-background-color: radial-gradient(center 50% 50%, radius 70%, rgba(255, 0, 0, 0.6) 10%, transparent);
+	-fx-background-insets: 2 0 0 0;
+	-fx-border-color: linear-gradient(to top, rgba(98, 98, 98, 0.77), transparent);
+	-fx-border-insets: 2 0 0 0;
+	-fx-border-width: 1;
+}
+
+.spinner .decrement-arrow-button:hover{
+	-fx-scale-y: 1.15;
+	-fx-scale-x: 1.15;
+}
+
+
+/*.spinner .increment-button{*/
+/*	-fx-background-color: rgba(0, 128, 0, 0.58);*/
+/*	-fx-background-radius: 10px;*/
+
+/*}*/
+
+/*.spinner .decrement-button{*/
+/*	-fx-background-color: rgba(255, 0, 0, 0.55);*/
+/*	-fx-background-radius: 10px;*/
+
+/*}*/
+
+
+/*-fx-spinner-arrow-button-shape: "M 0 0 L 5 5 L 10 0 Z";*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.spinner{*/
+/*	!*-fx-indeterminate-bar-length: 30;*!*/
+/*	!*-fx-indeterminate-bar-width: 5;*!*/
+/*	!*-fx-indeterminate-bar-gap: 2;*!*/
+/*	!*-fx-indeterminate-bar-animation-time: 2s;*!*/
+/*	-fx-progress-color: #0074D9;*/
+/*	-fx-background-color: white;*/
+/*	-fx-border-color: black;*/
+/*	-fx-border-width: 1px;*/
+/*	-fx-border-radius: 10px;*/
+/*	-fx-padding: 6px;*/
+/*}*/
+
+/*.spinner:selected{*/
+/*	-fx-progress-color: #0074D9;*/
+/*	-fx-background-color: white;*/
+/*	-fx-border-color: black;*/
+/*	-fx-border-width: 1px;*/
+/*	-fx-border-radius: 10px;*/
+/*	-fx-padding: 6px;*/
+/*}*/
