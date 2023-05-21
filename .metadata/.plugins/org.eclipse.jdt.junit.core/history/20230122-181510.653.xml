@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ReportsMainScreenControllerTest" project="EKrutTest" tests="9" started="9" failures="0" errors="1" ignored="0">
+  <testsuite name="UnitTest.ReportsMainScreenControllerTest" time="0.356">
+    <testcase name="TestclickShowReportNULLLocationFlag0" classname="UnitTest.ReportsMainScreenControllerTest" time="0.099"/>
+    <testcase name="TestclickShowReportNULLLocationFlag1" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+    <testcase name="TestclickShowReportNULLMonth" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+    <testcase name="TestclickShowReportDoneSuccessfull" classname="UnitTest.ReportsMainScreenControllerTest" time="0.253">
+      <error>java.lang.ExceptionInInitializerError&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;
+	at java.base/java.lang.Class.newInstance(Class.java:584)&#13;
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.constructValue(FXMLLoader.java:1019)&#13;
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:754)&#13;
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2722)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2552)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2466)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3237)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3194)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3163)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3136)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3113)&#13;
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:3106)&#13;
+	at gui.ReportScreens.ReportsMainScreenController.clickShowReport(ReportsMainScreenController.java:288)&#13;
+	at UnitTest.ReportsMainScreenControllerTest.TestclickShowReportDoneSuccessfull(ReportsMainScreenControllerTest.java:179)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)&#13;
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)&#13;
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: java.lang.RuntimeException: No toolkit found&#13;
+	at com.sun.javafx.tk.Toolkit.getToolkit(Toolkit.java:272)&#13;
+	at com.sun.javafx.perf.PerformanceTracker.logEvent(PerformanceTracker.java:100)&#13;
+	at javafx.scene.Node.&lt;clinit&gt;(Node.java:407)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;
+	at java.base/java.lang.Class.newInstance(Class.java:584)&#13;
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.constructValue(FXMLLoader.java:1019)&#13;
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:754)&#13;
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2722)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2552)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2466)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3237)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3194)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3163)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3136)&#13;
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3113)&#13;
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:3106)&#13;
+	at gui.ReportScreens.ReportsMainScreenController.clickShowReport(ReportsMainScreenController.java:288)&#13;
+	at gui.ReportScreens.ReportsMainScreenController$$EnhancerByMockitoWithCGLIB$$1021a163.CGLIB$clickShowReport$4(&lt;generated&gt;)&#13;
+	at gui.ReportScreens.ReportsMainScreenController$$EnhancerByMockitoWithCGLIB$$1021a163$$FastClassByMockitoWithCGLIB$$2ad8d139.invoke(&lt;generated&gt;)&#13;
+	at org.mockito.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:216)&#13;
+	at org.mockito.internal.creation.cglib.DelegatingMockitoMethodProxy.invokeSuper(DelegatingMockitoMethodProxy.java:19)&#13;
+	at org.mockito.internal.invocation.realmethod.DefaultRealMethod.invoke(DefaultRealMethod.java:21)&#13;
+	at org.mockito.internal.invocation.realmethod.CleanTraceRealMethod.invoke(CleanTraceRealMethod.java:30)&#13;
+	at org.mockito.internal.invocation.InvocationImpl.callRealMethod(InvocationImpl.java:112)&#13;
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:42)&#13;
+	at org.mockito.Answers.answer(Answers.java:90)&#13;
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:93)&#13;
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)&#13;
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:38)&#13;
+	at org.mockito.internal.creation.cglib.MethodInterceptorFilter.intercept(MethodInterceptorFilter.java:59)&#13;
+	at gui.ReportScreens.ReportsMainScreenController$$EnhancerByMockitoWithCGLIB$$1021a163.clickShowReport(&lt;generated&gt;)&#13;
+	... 28 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="TestclickShowReportNotFound" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+    <testcase name="TestclickShowReportNULLMachineIDFlag0" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+    <testcase name="TestclickShowReportNULLMachineIDFlag1" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+    <testcase name="TestclickShowReportNULLType" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+    <testcase name="TestclickShowReportNULLYear" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+  </testsuite>
+</testrun>

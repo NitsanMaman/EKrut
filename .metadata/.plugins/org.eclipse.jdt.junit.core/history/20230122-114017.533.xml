@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ReportsMainScreenControllerTest" project="EKrutTest" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="UnitTest.ReportsMainScreenControllerTest" time="0.098">
+    <testcase name="TestclickShowReportNULLLocationFlag0" classname="UnitTest.ReportsMainScreenControllerTest" time="0.093"/>
+    <testcase name="TestclickShowReportNULLLocationFlag1" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+    <testcase name="TestclickShowReportNULLMonth" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+    <testcase name="TestclickShowReportDoneSuccessfull" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+    <testcase name="TestclickShowReportNotFound" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+    <testcase name="TestclickShowReportNULLMachineIDFlag0" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+    <testcase name="TestclickShowReportNULLMachineID" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+    <testcase name="TestclickShowReportNULLType" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+    <testcase name="TestclickShowReportNULLYear" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+  </testsuite>
+</testrun>

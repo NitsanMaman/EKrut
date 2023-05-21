@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AllTests" project="EKrutTest" tests="25" started="25" failures="0" errors="0" ignored="0">
+  <testsuite name="UnitTest.AllTests" time="0.671">
+    <testsuite name="UnitTest.LogInScreenControllerTest" time="0.108">
+      <testcase name="TestloginOL" classname="UnitTest.LogInScreenControllerTest" time="0.105"/>
+      <testcase name="TestloginNullCredentials" classname="UnitTest.LogInScreenControllerTest" time="0.001"/>
+      <testcase name="TestloginWorngCredentials" classname="UnitTest.LogInScreenControllerTest" time="0.0"/>
+      <testcase name="TestloginNOTOLSubscriber" classname="UnitTest.LogInScreenControllerTest" time="0.001"/>
+      <testcase name="TestloginNOTOLCustomer" classname="UnitTest.LogInScreenControllerTest" time="0.001"/>
+      <testcase name="TestloginNOTOLNOTCustomerORSubscriber" classname="UnitTest.LogInScreenControllerTest" time="0.0"/>
+    </testsuite>
+    <testsuite name="UnitTest.MysqlControllerTest" time="0.545">
+      <testcase name="testLogUserInNullCredentialsThrowsException" classname="UnitTest.MysqlControllerTest" time="0.392"/>
+      <testcase name="testgetMonthlyInventoryReportQueryingExistsReport" classname="UnitTest.MysqlControllerTest" time="0.036"/>
+      <testcase name="testgetMonthlyInventoryReportNullInputThrowsNullPointerException" classname="UnitTest.MysqlControllerTest" time="0.011"/>
+      <testcase name="testLogUserInQueryingExistsUser" classname="UnitTest.MysqlControllerTest" time="0.012"/>
+      <testcase name="testgenerateMonthlyInventoryReportTooLongInput" classname="UnitTest.MysqlControllerTest" time="0.03"/>
+      <testcase name="testgetMonthlyInventoryReportQueryingNULLCellReport" classname="UnitTest.MysqlControllerTest" time="0.009"/>
+      <testcase name="testgenerateMonthlyInventoryReportAlreadyExists" classname="UnitTest.MysqlControllerTest" time="0.026"/>
+      <testcase name="testLogUserInQueryingNOTExistsUser" classname="UnitTest.MysqlControllerTest" time="0.008"/>
+      <testcase name="testgetMonthlyInventoryReportNoMatchingRecordReturnsNull" classname="UnitTest.MysqlControllerTest" time="0.005"/>
+      <testcase name="testgenerateMonthlyInventoryReportAddSuccssfull" classname="UnitTest.MysqlControllerTest" time="0.016"/>
+    </testsuite>
+    <testsuite name="UnitTest.ReportsMainScreenControllerTest" time="0.017">
+      <testcase name="TestclickShowReportNULLLocationFlag0" classname="UnitTest.ReportsMainScreenControllerTest" time="0.012"/>
+      <testcase name="TestclickShowReportNULLLocationFlag1" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+      <testcase name="TestclickShowReportNULLMonth" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+      <testcase name="TestclickShowReportDoneSuccessfull" classname="UnitTest.ReportsMainScreenControllerTest" time="0.002"/>
+      <testcase name="TestclickShowReportNotFound" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+      <testcase name="TestclickShowReportNULLMachineIDFlag0" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+      <testcase name="TestclickShowReportNULLMachineIDFlag1" classname="UnitTest.ReportsMainScreenControllerTest" time="0.001"/>
+      <testcase name="TestclickShowReportNULLType" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+      <testcase name="TestclickShowReportNULLYear" classname="UnitTest.ReportsMainScreenControllerTest" time="0.0"/>
+    </testsuite>
+  </testsuite>
+</testrun>

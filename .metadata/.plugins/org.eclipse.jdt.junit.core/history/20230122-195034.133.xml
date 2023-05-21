@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MysqlControllerTest" project="EKrutTest" tests="10" started="10" failures="0" errors="0" ignored="0">
+  <testsuite name="UnitTest.MysqlControllerTest" time="0.559">
+    <testcase name="testGetMonthlyInventoryReportExistingReportWithNullProductsReturnNull" classname="UnitTest.MysqlControllerTest" time="0.417"/>
+    <testcase name="testGetMonthlyInventoryReportNoMatchingRecordReturnsNull" classname="UnitTest.MysqlControllerTest" time="0.011"/>
+    <testcase name="testLogUserInIncorrectCredentialsReturnsNull" classname="UnitTest.MysqlControllerTest" time="0.014"/>
+    <testcase name="testGenerateValidMonthlyInventoryReportCatchesMysqlDataTruncation" classname="UnitTest.MysqlControllerTest" time="0.042"/>
+    <testcase name="testLogUserInNullCredentialsThrowsException" classname="UnitTest.MysqlControllerTest" time="0.009"/>
+    <testcase name="testgenerateMonthlyInventoryReportAlreadyExists" classname="UnitTest.MysqlControllerTest" time="0.018"/>
+    <testcase name="testLogUserInValidCredentialsValidUser" classname="UnitTest.MysqlControllerTest" time="0.011"/>
+    <testcase name="testGetMonthlyInventoryReportNullInputThrowsNullPointerException" classname="UnitTest.MysqlControllerTest" time="0.008"/>
+    <testcase name="testGetMonthlyInventoryReportWithExistingReport" classname="UnitTest.MysqlControllerTest" time="0.008"/>
+    <testcase name="testgenerateMonthlyInventoryReportAddSuccssfull" classname="UnitTest.MysqlControllerTest" time="0.021"/>
+  </testsuite>
+</testrun>

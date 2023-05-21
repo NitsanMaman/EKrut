@@ -66,6 +66,10 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jdt.junit 4 0 2023-01-22 11:26:30.368
 !MESSAGE No tests found with test runner 'JUnit 5'.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 89f3448 (server reupload)
 !SESSION 2023-04-08 18:55:23.246 -----------------------------------------------
 eclipse.buildId=4.25.0.I20220831-1800
 java.version=17.0.4.1
@@ -722,3 +726,8 @@ java.io.FileNotFoundException: C:\Users\NitMa\EKrutProject\.metadata\.plugins\or
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 00cac8f (ReUpload)
+>>>>>>> 89f3448 (server reupload)

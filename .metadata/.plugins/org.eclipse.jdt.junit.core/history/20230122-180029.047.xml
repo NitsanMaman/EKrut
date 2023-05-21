@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LogInScreenControllerTest" project="EKrutTest" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="UnitTest.LogInScreenControllerTest" time="0.312">
+    <testcase name="TestloginOL" classname="UnitTest.LogInScreenControllerTest" time="0.309"/>
+    <testcase name="TestloginNullCredentials" classname="UnitTest.LogInScreenControllerTest" time="0.001"/>
+    <testcase name="TestloginWorngCredentials" classname="UnitTest.LogInScreenControllerTest" time="0.001"/>
+    <testcase name="TestloginNOTOLSubscriber" classname="UnitTest.LogInScreenControllerTest" time="0.0"/>
+    <testcase name="TestloginNOTOLCustomer" classname="UnitTest.LogInScreenControllerTest" time="0.001"/>
+    <testcase name="TestloginNOTOLNOTCustomerORSubscriber" classname="UnitTest.LogInScreenControllerTest" time="0.0"/>
+  </testsuite>
+</testrun>
